@@ -1,0 +1,47 @@
+CNN for MNIST Digit Classification
+==================================
+
+This report summarizes the implementation and evaluation of a Convolutional Neural Network (CNN) trained on the MNIST dataset.
+
+1. Objective
+------------
+- Build and train a CNN on MNIST.
+- Understand convolution + pooling layers.
+- Compare CNN performance with classical ML methods.
+- Visualize predictions and confusion matrix.
+
+2. Model Architecture
+---------------------
+- Conv2D (32 filters, 3x3)
+- MaxPooling2D
+- Conv2D (64 filters, 3x3)
+- MaxPooling2D
+- Flatten
+- Dense (64 units)
+- Dense (10 units, softmax)
+
+3. Training Summary
+-------------------
+- Epochs: 5
+- Optimizer: Adam
+- Loss: Sparse Categorical Crossentropy
+
+4. Performance
+--------------
+- Test Accuracy: ~99.06%
+- Confusion Matrix saved in results/confusion_matrix.png
+
+5. Observations
+---------------
+- CNN learns spatial patterns effectively.
+- Outperforms classical ML models like SVM.
+- Very low misclassification rate.
+
+6. Files Generated
+------------------
+- training_history.png
+- confusion_matrix.png
+- sample_predictions.png
+- metrics.txt
+
+End of Report
